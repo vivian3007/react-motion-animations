@@ -180,7 +180,7 @@ section {
 
 .menu {
     width: 300px;
-    margin: 20px;
+    margin: 20px 20px 20px 140px;
 }
 
 .menu-ul {
@@ -222,4 +222,55 @@ section {
 
 .hidden {
     display: none;
+}
+
+.hamburger-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    margin: 20px;
+    pointer-events: none;
+}
+
+.hamburger-nav.open {
+    pointer-events: auto;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    background: #fff;
+}
+
+.menu-toggle-button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    /*height: 50px;*/
+    border-radius: 50%;
+    background: hotpink;
+    pointer-events: auto;
+}
+
+.menu-item-ul {
+    padding: 25px;
+    position: absolute;
+    top: 100px;
+    width: 230px;
+}
+
+.menu-item-li {
+    list-style: none;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
