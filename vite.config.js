@@ -7,5 +7,6 @@ export default defineConfig({
         port: 5173,
         // open: true,
         hmr: true
-    }
+    },
+    base: '/react-motion-animations/'
 })
